@@ -90,7 +90,7 @@ export class Autos{
  const data = fs.readFileSync("./More.json", "utf8")
  const carros= JSON.parse(data) 
  for(let i=0; i<carros.lenght;i++) {
-  car.push(carros[i]) 
+    car.push(carros[i]) 
  }
- console.log(car);
+ registro.insertar(carros,listado)
  
