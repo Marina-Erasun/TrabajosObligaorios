@@ -1,0 +1,92 @@
+[
+  {
+    "nombre": "marina",
+    "apellido": "erasun",
+    "fechaNac": "14/10/1996",
+    "documento": "39922803",
+    "telefono": "2281353625",
+    "miembroDesde": "25/3/2023",
+    "deporte": 3
+  },
+  {
+    "nombre": "juana",
+    "apellido": "de arco",
+    "fechaNac": "27/4/1995",
+    "documento": "35698741",
+    "telefono": "2281563210",
+    "miembroDesde": "25/3/2023",
+    "deporte": 0
+  },
+  {
+    "nombre": "1",
+    "apellido": "paez",
+    "fechaNac": "28/6/1963",
+    "documento": "2281565874",
+    "telefono": "2281566985",
+    "miembroDesde": "25/3/2023",
+    "deporte": 4
+  },
+  {
+    "nombre": "martin",
+    "apellido": "lopez",
+    "fechaNac": "7/8/1991",
+    "documento": "36321152",
+    "telefono": "2284565896",
+    "miembroDesde": "25/3/2023",
+    "deporte": 4
+  },
+  {
+    "nombre": "leandro",
+    "apellido": "paredes",
+    "fechaNac": "29/6/1992",
+    "documento": "37852315",
+    "telefono": "2284632587",
+    "miembroDesde": "25/3/2023",
+    "deporte": 3
+  },
+  {
+    "nombre": "juan",
+    "apellido": "perez",
+    "fechaNac": "28/12/1999",
+    "documento": "41589632",
+    "telefono": "2259455223",
+    "miembroDesde": "25/3/2023",
+    "deporte": 0
+  },
+  {
+    "nombre": "ignacio",
+    "apellido": "molina",
+    "fechaNac": "8/7/1991",
+    "documento": "36362005",
+    "telefono": "2281325017",
+    "miembroDesde": "25/3/2023",
+    "deporte": 0
+  },
+  {
+    "nombre": "silvia",
+    "apellido": "gerez",
+    "fechaNac": "8/5/1964",
+    "documento": "166040789",
+    "telefono": "2281316124",
+    "miembroDesde": "25/3/2023",
+    "deporte": 2
+  },
+  {
+    "nombre": "pedro",
+    "apellido": "gonzaez",
+    "fechaNac": "31/8/1963",
+    "documento": "16306052",
+    "telefono": "2281566581",
+    "miembroDesde": "25/3/2023",
+    "deporte": 0
+  },
+  {
+    "nombre": "leonel",
+    "apellido": "messi",
+    "fechaNac": "30/12/1988",
+    "documento": "32256854",
+    "telefono": "2284596321",
+    "miembroDesde": "25/3/2023",
+    "deporte": 5
+  }
+]
