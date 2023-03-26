@@ -75,7 +75,7 @@ export class Autos{
  const vehiculo3 = new Autos('volkswagen', 'amarok', 2019, 'azul', 'Austria', 'Pedro', 'ZYR815')
  const vehiculo4 = new Autos('fiat', 'cronos', 2022, 'blanco', 'Italia', 'Gabriela', 'GHYP846')
  
- const listado: Autos[]= [vehiculo0,vehiculo1,vehiculo2,vehiculo3,vehiculo4]
+const listado : Autos[]= [vehiculo0,vehiculo1,vehiculo2,vehiculo3,vehiculo4]
  const registro = new RegistroAutomotor
  const vehiculo5 = new Autos ('Ford', 'focus', 2011, 'negro', 'Brasil', 'Mario', 'AFA022')
 // registro.insertar(vehiculo5, listado)
@@ -86,11 +86,12 @@ export class Autos{
  //registro.registroAutomotor(listado)
 
  import * as fs from "fs";
- const car:string[]=[]
+ const car:string[]= []
  const data = fs.readFileSync("./More.json", "utf8")
  const carros= JSON.parse(data) 
  for(let i=0; i<carros.lenght;i++) {
-   car.push(carros[i]) 
+   listado.push(carros[i]) 
  }
- registro.insertar(carros,listado)
+registro.insertar(carros,listado)
+ 
  

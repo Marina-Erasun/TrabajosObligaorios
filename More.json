@@ -1,10 +1,20 @@
 [
-    {"brand": "ford",
-    "model": "ranger",
-    "year": 2016,
-    "colour": "rojo",
-    "origin": "Brasil",
-    "owner": "Horacio",
-    "patent": "TRD874"
+    {
+        "brand": "ford",
+        "model": "ranger",
+        "year": 2016,
+        "colour": "rojo",
+        "origin": "Brasil",
+        "owner": "Horacio", 
+        "patent": "TRD874"
+    },
+    {
+        "brand": "ford",
+        "model": "etios",
+        "year": 2020,
+        "colour": "blanco",
+        "origin": "Brasil",
+        "owner": "Victoria", 
+        "patent": "HTS963"
     }
 ]
