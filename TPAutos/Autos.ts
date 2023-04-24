@@ -80,14 +80,14 @@ const listado : Autos[]= [vehiculo0,vehiculo1,vehiculo2,vehiculo3,vehiculo4]
  const vehiculo5 = new Autos ('Ford', 'focus', 2011, 'negro', 'Brasil', 'Mario', 'AFA022')
 // registro.insertar(vehiculo5, listado)
  //registro.consultar('LYO619', listado)
- //registro.modificar('LYO619', listado, 'LYO618')
+ registro.modificar('LYO619', listado, 'LYO618')
  //registro.eliminar('LYO619', listado)
 
  //registro.registroAutomotor(listado)
 
  import * as fs from "fs";
  const car:string[]= []
- const data = fs.readFileSync("./More.json", "utf8")
+ const data = fs.readFileSync("./MoreAutos.json", "utf8")
  const carros= JSON.parse(data) 
  for(let i=0; i<carros.lenght;i++) {
    listado.push(carros[i]) 

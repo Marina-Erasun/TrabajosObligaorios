@@ -1,0 +1,26 @@
+{
+  "name": "trabajointegrador310323",
+  "version": "1.0.0",
+  "description": "trabajo integrador",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imolinap9191/cursoJuarez.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imolinap9191/cursoJuarez/issues"
+  },
+  "homepage": "https://github.com/imolinap9191/cursoJuarez#readme",
+  "dependencies": {
+    "@types/node": "^18.15.13",
+    "readline": "^1.3.0",
+    "readline-sync": "^1.4.10",
+    "ts-node": "^10.9.1",
+    "uuid": "^9.0.0"
+  }
+}

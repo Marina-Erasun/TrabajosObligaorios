@@ -1,0 +1,50 @@
+[
+  {
+    "nombre": "marina",
+    "apellido": "erasun",
+    "iD": "8b43f",
+    "materias": [
+      "matematica",
+      "historia",
+      "literatura"
+    ],
+    "notas": [
+      5,
+      8,
+      7
+    ],
+    "profesores": []
+  },
+  {
+    "nombre": "marina",
+    "apellido": "peres",
+    "iD": "47e90",
+    "materias": [
+      "matematica",
+      "literatura",
+      "fisica"
+    ],
+    "notas": [
+      5,
+      8,
+      8
+    ],
+    "profesores": []
+  },
+  {
+    "nombre": "pulo",
+    "apellido": "peres",
+    "iD": "47e90",
+    "materias": [
+      "matematica",
+      "literatura",
+      "fisica"
+    ],
+    "notas": [
+      5,
+      8,
+      8
+    ],
+    "profesores": []
+  }
+]
