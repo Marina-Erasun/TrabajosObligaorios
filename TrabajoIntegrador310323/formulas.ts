@@ -1,17 +1,3 @@
-/*formula para incluir materia en materia
-matricularAlumnoAMateria(nombre:string;curso:number,profesor:string){
-    let materia= new Materia(nombre,profesor);
-    this.materia.push(materia)
-}
-en constructor poner:
-this.promedio=Number(this.calcularPromedio());
-calcularpromedio(){
-    const sum= this.materia.reduce((acumulador,materia)=>acumulador+materia.curso,0);
-    this.promedio=sum/this.materias.length;
-    return this.promedio
-}
-*/
-
 const fs = require('fs')
 
 //Revisar si el archivo en el que vamos a escribir existe

@@ -1,18 +1,7 @@
-import Alumno from "./cAlumno";
-import Profesor from "./cProfesor";
-export enum Asignatura {
-    matematica,literatura,historia,geografia,biologia,fisica,ingles,edFisica
-  }
 export class Materia{
-    nombre:Asignatura;
-    //alumnos:Alumno[];
-    //profesor:Profesor
-    //promedios:number[]
+    nombre:string;
 
-    constructor(nombre:Asignatura,profesor:Profesor){
+    constructor(nombre:string){
         this.nombre= nombre;
-        //this.alumnos=[];
-        //this.profesor=profesor;
-        //this.promedios=[]
     }
  }

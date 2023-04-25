@@ -3,56 +3,48 @@
     "nombre": "jose",
     "apellido": "lopez",
     "iD": "4dfc3",
-    "alumnos": [],
     "materiaAsignada": "matematica"
   },
   {
     "nombre": "cecilia",
     "apellido": "ortega",
     "iD": "e2212",
-    "alumnos": [],
     "materiaAsignada": "literatura"
   },
   {
     "nombre": "fabiana",
     "apellido": "modelo",
     "iD": "1c473",
-    "alumnos": [],
     "materiaAsignada": "historia"
   },
   {
     "nombre": "ignacio",
     "apellido": "perco",
     "iD": "1d62a",
-    "alumnos": [],
     "materiaAsignada": "geografia"
   },
   {
     "nombre": "jorge",
     "apellido": "stafa",
     "iD": "a7cca",
-    "alumnos": [],
     "materiaAsignada": "biologia"
   },
   {
     "nombre": "juliana",
     "apellido": "quevedo",
     "iD": "7ce3e",
-    "alumnos": [],
-    "materiaAsignada": "biologia"
+    "materiaAsignada": "fisica"
   },
   {
     "nombre": "pedro",
     "apellido": "noel",
     "iD": "b8aef",
-    "alumnos": [],
     "materiaAsignada": "ingles"
   },
   {
     "nombre": "romina",
     "apellido": "vega",
     "iD": "35708",
-    "alumnos": [],
     "materiaAsignada": "edFisica"
   }
 ]

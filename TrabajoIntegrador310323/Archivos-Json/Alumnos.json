@@ -12,8 +12,7 @@
       5,
       8,
       7
-    ],
-    "profesores": []
+    ]
   },
   {
     "nombre": "marina",
@@ -28,8 +27,7 @@
       5,
       8,
       8
-    ],
-    "profesores": []
+    ]
   },
   {
     "nombre": "pulo",
@@ -44,7 +42,74 @@
       5,
       8,
       8
-    ],
-    "profesores": []
+    ]
+  },
+  {
+    "nombre": "natalia",
+    "apellido": "sosa",
+    "iD": "7fd15",
+    "materias": [
+      {
+        "materia": "matematica"
+      },
+      {
+        "materia": "biologia"
+      },
+      {
+        "materia": "ingles"
+      },
+      {
+        "materia": "biologia"
+      },
+      {
+        "materia": "geografia"
+      },
+      {
+        "materia": "biologia"
+      },
+      {
+        "materia": "geografia"
+      },
+      {
+        "materia": "biologia"
+      },
+      {
+        "materia": "edFisica"
+      },
+      {
+        "materia": "literatura"
+      }
+    ]
+  },
+  {
+    "nombre": "natalia",
+    "apellido": "sosasa",
+    "iD": "bcc03",
+    "materias": [
+      {
+        "materia": "matematica"
+      },
+      {
+        "materia": "literatura"
+      },
+      {
+        "materia": "historia"
+      },
+      {
+        "materia": "matematica"
+      },
+      {
+        "materia": "matematica"
+      },
+      {
+        "materia": "geografia"
+      }
+    ]
+  },
+  {
+    "nombre": "peter",
+    "apellido": "alfonso",
+    "iD": "77980",
+    "materias": []
   }
 ]
