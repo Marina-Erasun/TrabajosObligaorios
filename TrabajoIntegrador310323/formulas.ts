@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-//Revisar si el archivo en el que vamos a escribir existe
+
 function check(path:any){
     if (fs.existsSync(path)){
         console.log('existe');
