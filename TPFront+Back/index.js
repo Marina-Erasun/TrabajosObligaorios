@@ -54,7 +54,9 @@ function getAll(url) {
         const btnEditar = document.createElement('button');
         btnEditar.textContent = 'Editar';
         btnEditar.addEventListener('click', () => {
-        updateOne(dato.id);
+        modal.showModal(dato.id);
+        updateOne(dato.id) 
+        saveChanges(BASE_URL, editData);
         });
         celdaOpciones.appendChild(btnEditar);
 
@@ -115,7 +117,8 @@ function updateOne(id) {
   const email = mailInput.value;
   const telefono = telefonoInput.value;
 
-  const data = {
+  const editData = {
+    id: id,
     fullName: fullName,
     email: email,
     telefono: telefono,
@@ -123,11 +126,22 @@ function updateOne(id) {
   fetch(BASE_URL + `/${id}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(data),
+    body: JSON.stringify(editData),
   })
     .then(res => res.json())
-    .then(data => console.log(data))
+    .then(data => console.log(editData))
     .catch(err => console.error(err));
+}
+
+function saveChanges(url, editData) {
+  fetch(url + '/' + editData.id, {
+    method: 'PUT',
+    headers: { "Content-Type": "application/json"},
+    body: JSON.stringify(editData)
+  })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error al actualizar los datos:', error));
 }
 
 getAll(BASE_URL)
