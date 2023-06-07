@@ -1,8 +1,8 @@
 const form = document.getElementById("form");
 form.addEventListener("submit", handleSubmit);
 function handleSubmit() {
-  const user = new FormData(form);
-  console.log(user.get("fullName"));
+  //const user = new FormData(form);
+  addOne(data);
 }
 const openModal = document.getElementById("open-modal");
 const modal = document.getElementById("modal");
@@ -12,7 +12,6 @@ closeModal.addEventListener("click", () => {
 });
 openModal.addEventListener("click", () => {
   modal.showModal();
-  addOne();
 });
 
 const BASE_URL = "https://647a6c2ad2e5b6101db05795.mockapi.io/users";
@@ -84,7 +83,7 @@ function deleteOne(id) {
     .catch(err => console.error(err));
 }
 
-function addOne() {
+function addOne(data) {
   const fullNameInput = document.getElementById("fullName");
   const mailInput = document.getElementById("email");
   const telefonoInput = document.getElementById("phone");
@@ -98,6 +97,7 @@ function addOne() {
     email: email,
     telefono: telefono,
   };
+ 
   fetch(BASE_URL, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -129,7 +129,10 @@ function updateOne(id) {
     body: JSON.stringify(editData),
   })
     .then(res => res.json())
-    .then(data => console.log(editData))
+    .then(data => {
+      console.log(editData);
+      saveChanges(BASE_URL,editData);
+    })
     .catch(err => console.error(err));
 }
 
