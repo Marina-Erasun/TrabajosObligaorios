@@ -1,9 +1,14 @@
 const form = document.getElementById("form");
 form.addEventListener("submit", handleSubmit);
-function handleSubmit() {
-  //const user = new FormData(form);
-  addOne(data);
+function handleSubmit(event) {
+  event.preventDefault(); 
+  if (userData.id){
+    updateOne(userData.id)
+  } else{
+  addOne(); 
+  }
 }
+
 const openModal = document.getElementById("open-modal");
 const modal = document.getElementById("modal");
 const closeModal = document.getElementById("close-modal");
@@ -53,9 +58,8 @@ function getAll(url) {
         const btnEditar = document.createElement('button');
         btnEditar.textContent = 'Editar';
         btnEditar.addEventListener('click', () => {
-        modal.showModal(dato.id);
-        updateOne(dato.id) 
-        saveChanges(BASE_URL, editData);
+        populateForm(dato); //esta funcion es  usada para rellenar formularios
+        modal.showModal();
         });
         celdaOpciones.appendChild(btnEditar);
 
@@ -83,7 +87,7 @@ function deleteOne(id) {
     .catch(err => console.error(err));
 }
 
-function addOne(data) {
+function addOne() {
   const fullNameInput = document.getElementById("fullName");
   const mailInput = document.getElementById("email");
   const telefonoInput = document.getElementById("phone");
@@ -92,12 +96,12 @@ function addOne(data) {
   const email = mailInput.value;
   const telefono = telefonoInput.value;
 
-  const data = {
-    fullName: fullName,
+  const data ={
+    name: fullName,
     email: email,
     telefono: telefono,
   };
- 
+
   fetch(BASE_URL, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -106,6 +110,20 @@ function addOne(data) {
     .then(res => res.json())
     .then(data => console.log(data))
     .catch(err => console.error(err));
+}
+
+const userData = {} //guarda los datos del usuario que se selecciona al editar
+
+function populateForm (user){
+  const fullNameInput = document.getElementById("fullName");
+  const mailInput = document.getElementById("email");
+  const telefonoInput = document.getElementById("phone");
+
+  fullNameInput.value = user.name;
+  mailInput.value = user.email;
+  telefonoInput.value = user.telefono;
+
+  userData.id = user.id;
 }
 
 function updateOne(id) {
@@ -119,7 +137,7 @@ function updateOne(id) {
 
   const editData = {
     id: id,
-    fullName: fullName,
+    name: fullName,
     email: email,
     telefono: telefono,
   };
@@ -131,20 +149,8 @@ function updateOne(id) {
     .then(res => res.json())
     .then(data => {
       console.log(editData);
-      saveChanges(BASE_URL,editData);
     })
     .catch(err => console.error(err));
 }
 
-function saveChanges(url, editData) {
-  fetch(url + '/' + editData.id, {
-    method: 'PUT',
-    headers: { "Content-Type": "application/json"},
-    body: JSON.stringify(editData)
-  })
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.error('Error al actualizar los datos:', error));
-}
-
-getAll(BASE_URL)
+getAll(BASE_URL);
