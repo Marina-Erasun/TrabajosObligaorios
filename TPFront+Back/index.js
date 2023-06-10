@@ -7,6 +7,7 @@ function handleSubmit(event) {
   } else{
   addOne(); 
   }
+  form.reset();
 }
 
 const openModal = document.getElementById("open-modal");
